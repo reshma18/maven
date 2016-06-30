@@ -43,7 +43,7 @@ if node['platform_family'] == 'windows'
     action :create
   end
 else
-  template '/etc/mavenrc' do
+  template '/etc/mavenrc/hello' do
     source 'mavenrc.erb'
     mode   '0755'
   end
